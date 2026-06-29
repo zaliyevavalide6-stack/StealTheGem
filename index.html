@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,25 +7,41 @@
 </head>
 <body>
 
-  <header>
-    <h1>💎 Steal The Gem</h1>
-    <p>Find the gem. Steal it. Survive.</p>
-  </header>
+  <h1>💎 STEAL THE GEM</h1>
+  <p class="subtitle">Choose your action</p>
 
-  <section class="menu">
-    <button onclick="startGame()">▶ Play</button>
-    <button onclick="showInfo()">ℹ Info</button>
-    <button onclick="shop()">🛒 Shop</button>
-  </section>
+  <div class="grid">
+
+    <div class="card" onclick="startGame()">
+      <h2>▶ Play</h2>
+      <p>Start the game</p>
+    </div>
+
+    <div class="card" onclick="showInfo()">
+      <h2>ℹ Info</h2>
+      <p>How to play</p>
+    </div>
+
+    <div class="card" onclick="shop()">
+      <h2>🛒 Shop</h2>
+      <p>Skins & upgrades</p>
+    </div>
+
+    <div class="card" onclick="settings()">
+      <h2>⚙ Settings</h2>
+      <p>Game options</p>
+    </div>
+
+  </div>
 
   <div id="infoBox" class="box hidden">
-    <p>⚠️ Game idea: You must steal the gem from a protected base and escape!</p>
+    💎 Steal the gem from the base and escape alive!
   </div>
 
   <div id="shopBox" class="box hidden">
-    <p>💎 Shop coming soon...</p>
+    🛒 Shop coming soon...
   </div>
 
   <script src="script.js"></script>
 </body>
-</html>  
+</html>
