@@ -1,5 +1,5 @@
 function startGame() {
-  alert("💎 Loading Steal The Gem...");
+  alert("💎 Game starting...");
 }
 
 function showInfo() {
@@ -8,4 +8,8 @@ function showInfo() {
 
 function shop() {
   document.getElementById("shopBox").classList.toggle("hidden");
+}
+
+function settings() {
+  alert("⚙ Settings coming soon...");
 }
