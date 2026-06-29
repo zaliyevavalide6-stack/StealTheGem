@@ -9,48 +9,63 @@
 body{
 margin:0;
 font-family:Arial,sans-serif;
-background:#0d1117;
+background:#0b1020;
 color:white;
 text-align:center;
 }
 
 header{
-background:#161b22;
-padding:30px;
+padding:50px;
+background:linear-gradient(90deg,#00bfff,#0077ff);
 }
 
 h1{
-font-size:45px;
-color:#00d9ff;
+font-size:50px;
+margin:0;
 }
 
-p{
-font-size:20px;
+nav{
+background:#111827;
+padding:15px;
 }
 
-.btn{
-display:inline-block;
-margin:15px;
-padding:15px 30px;
-background:#00d9ff;
-color:black;
+nav a{
+color:white;
 text-decoration:none;
-border-radius:10px;
+margin:15px;
 font-weight:bold;
 }
 
 section{
-padding:40px;
+padding:50px 20px;
+}
+
+.button{
+display:inline-block;
+padding:15px 30px;
+margin:10px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-size:18px;
+}
+
+.card{
+background:#1f2937;
+margin:20px auto;
+padding:20px;
+border-radius:15px;
+max-width:700px;
 }
 
 footer{
-background:#161b22;
 padding:20px;
-margin-top:30px;
+background:#111827;
 }
 </style>
-
 </head>
+
 <body>
 
 <header>
@@ -58,22 +73,31 @@ margin-top:30px;
 <p>Official Website</p>
 </header>
 
+<nav>
+<a href="#">Home</a>
+<a href="#">Updates</a>
+<a href="#">Gallery</a>
+<a href="#">Discord</a>
+</nav>
+
 <section>
+<div class="card">
 <h2>Welcome!</h2>
-<p>Collect gems, become rich and explore the world!</p>
+<p>Collect gems, unlock new areas and become the richest player!</p>
 
-<a class="btn" href="#">🎮 Play Roblox</a>
-<a class="btn" href="#">💬 Discord</a>
-</section>
+<a class="button" href="#">🎮 Play Roblox</a>
+<a class="button" href="#">💬 Join Discord</a>
+</div>
 
-<section>
-<h2>Latest Update</h2>
-<p>☢️ Radioactive Update Coming Soon!</p>
+<div class="card">
+<h2>☢️ Next Update</h2>
+<p>Radioactive Update is Coming Soon!</p>
+</div>
 </section>
 
 <footer>
-© 2026 Steal The Gem. All Rights Reserved.
+© 2026 Steal The Gem 💎
 </footer>
 
 </body>
-  </html>
+</html>
