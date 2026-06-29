@@ -2,32 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Steal The Gem Wiki 💎</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Steal The Gem 💎</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: radial-gradient(circle, #0b1020, #000);
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 50px;
+      color: gold;
+      text-shadow: 0 0 20px gold;
+    }
+
+    p {
+      opacity: 0.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 350px;
+      margin: 50px auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 25px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 18px;
+    }
+
+    .card:hover {
+      transform: scale(1.08);
+      background: rgba(255,215,0,0.15);
+      border-color: gold;
+    }
+
+    .big {
+      grid-column: span 2;
+      background: rgba(255,215,0,0.2);
+    }
+  </style>
 </head>
+
 <body>
 
-  <h1>💎 Steal The Gem Wiki</h1>
+  <h1>💎 STEAL THE GEM</h1>
+  <p>Find the gem. Steal it. Escape alive.</p>
 
-  <div class="box">
-    <h2>📖 About Game</h2>
-    <p>Steal The Gem is a game where players must steal a magical gem from a protected base.</p>
+  <div class="grid">
+
+    <div class="card big" onclick="playGame()">
+      ▶ PLAY GAME
+    </div>
+
+    <div class="card" onclick="openWiki()">
+      📖 WIKI
+    </div>
+
+    <div class="card" onclick="alert('Shop coming soon')">
+      🛒 SHOP
+    </div>
+
+    <div class="card" onclick="alert('Settings coming soon')">
+      ⚙ SETTINGS
+    </div>
+
   </div>
 
-  <div class="box">
-    <h2>💎 Gem</h2>
-    <p>The gem is the main objective of the game. Whoever takes it wins advantage.</p>
-  </div>
+  <script>
+    function playGame() {
+      alert("💎 Game loading...");
+      // sonra game.html əlavə edərik
+    }
 
-  <div class="box">
-    <h2>🏰 Base</h2>
-    <p>The base is heavily protected and players must enter carefully.</p>
-  </div>
-
-  <div class="box">
-    <h2>🎮 How to Play</h2>
-    <p>Go to base → Take gem → Escape alive!</p>
-  </div>
+    function openWiki() {
+      window.location.href = "https://github.com/zaliyevavalide6-stack/StealTheGem/wiki";
+    }
+  </script>
 
 </body>
 </html>
