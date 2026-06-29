@@ -1,66 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Steal The Gem 💎</title>
+  <meta charset="UTF-8">
+  <title>Steal The Gem 💎</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#0b1020;
-color:white;
-text-align:center;
-}
+  <header>
+    <h1>💎 Steal The Gem</h1>
+    <p>Find the gem. Steal it. Survive.</p>
+  </header>
 
-header{
-padding:50px;
-background:linear-gradient(90deg,#00bfff,#0077ff);
-}
+  <section class="menu">
+    <button onclick="startGame()">▶ Play</button>
+    <button onclick="showInfo()">ℹ Info</button>
+    <button onclick="shop()">🛒 Shop</button>
+  </section>
 
-h1{
-font-size:50px;
-margin:0;
-}
+  <div id="infoBox" class="box hidden">
+    <p>⚠️ Game idea: You must steal the gem from a protected base and escape!</p>
+  </div>
 
-nav{
-background:#111827;
-padding:15px;
-}
+  <div id="shopBox" class="box hidden">
+    <p>💎 Shop coming soon...</p>
+  </div>
 
-nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-font-weight:bold;
-}
-
-section{
-padding:50px 20px;
-}
-
-.button{
-display:inline-block;
-padding:15px 30px;
-margin:10px;
-background:#00bfff;
-color:white;
-text-decoration:none;
-border-radius:10px;
-font-size:18px;
-}
-
-.card{
-background:#1f2937;
-margin:20px auto;
-padding:20px;
-border-radius:15px;
-max-width:700px;
-}
-
-footer{
-padding:20px;
-background:#111827;
-}
-  
+  <script src="script.js"></script>
+</body>
+</html>  
