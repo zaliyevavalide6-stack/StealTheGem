@@ -3,45 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <title>Steal The Gem 💎</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #0b0f1a;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 30px;
+      color: gold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 300px;
+      margin: 40px auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: rgba(255,215,0,0.2);
+    }
+  </style>
 </head>
+
 <body>
 
-  <h1>💎 STEAL THE GEM</h1>
-  <p class="subtitle">Choose your action</p>
+  <h1>💎 Steal The Gem</h1>
 
   <div class="grid">
 
     <div class="card" onclick="startGame()">
-      <h2>▶ Play</h2>
-      <p>Start the game</p>
+      ▶ Play
     </div>
 
-    <div class="card" onclick="showInfo()">
-      <h2>ℹ Info</h2>
-      <p>How to play</p>
+    <div class="card" onclick="openWiki()">
+      📖 Wiki
     </div>
 
-    <div class="card" onclick="shop()">
-      <h2>🛒 Shop</h2>
-      <p>Skins & upgrades</p>
+    <div class="card" onclick="alert('Shop coming soon')">
+      🛒 Shop
     </div>
 
-    <div class="card" onclick="settings()">
-      <h2>⚙ Settings</h2>
-      <p>Game options</p>
+    <div class="card" onclick="alert('Settings coming soon')">
+      ⚙ Settings
     </div>
 
   </div>
 
-  <div id="infoBox" class="box hidden">
-    💎 Steal the gem from the base and escape alive!
-  </div>
+  <script>
+    function startGame() {
+      alert("💎 Game starting...");
+    }
 
-  <div id="shopBox" class="box hidden">
-    🛒 Shop coming soon...
-  </div>
+    function openWiki() {
+      window.location.href = "https://github.com/zaliyevavalide6-stack/StealTheGem/wiki";
+    }
+  </script>
 
-  <script src="script.js"></script>
 </body>
 </html>
