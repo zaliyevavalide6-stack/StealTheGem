@@ -1,5 +1,5 @@
 function startGame() {
-  alert("💎 Game starting soon...");
+  alert("💎 Loading Steal The Gem...");
 }
 
 function showInfo() {
